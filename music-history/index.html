@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Western Music History: Lineages</title>
+<style>:root{--accent:#ff8a7a;--glow:rgba(255,138,122,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:min(1.25vw,2vh)}
+html,body{height:100%;overflow:hidden;background:#0d0f14}
+body{color:#e9ebf1;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","DejaVu Sans","Segoe UI Symbol","Apple Symbols",sans-serif;-webkit-font-smoothing:antialiased;cursor:pointer;user-select:none}
+.deck{position:fixed;inset:0;background:radial-gradient(ellipse at 85% 0%,var(--glow) 0%,transparent 55%),#0d0f14}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:4.2rem 7rem 5.6rem;opacity:0;visibility:hidden;transition:opacity .35s ease,transform .35s ease;transform:translateY(.6rem)}
+.slide.active{opacity:1;visibility:visible;transform:none}
+.inner{width:100%;max-width:74rem;margin:0 auto}
+.kicker{font-size:1.15rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:1.1rem}
+h1{font-size:4.9rem;line-height:1.05;font-weight:800;letter-spacing:-.02em}
+h2{font-size:3.3rem;line-height:1.1;font-weight:750;letter-spacing:-.015em;margin-bottom:1.8rem}
+.sub{font-size:1.9rem;color:#b4bac8;margin-top:1.6rem;line-height:1.4;max-width:60rem}
+p,li{font-size:1.75rem;line-height:1.45;color:#d7dbe5}
+p+p{margin-top:1rem}
+ul{list-style:none}
+li{position:relative;padding-left:1.8rem;margin:.75rem 0}
+li::before{content:"";position:absolute;left:0;top:.62em;width:.6rem;height:.6rem;border-radius:50%;background:var(--accent)}
+b,strong{color:#fff;font-weight:700}
+.ac{color:var(--accent)}
+.muted{color:#a3aaba}
+.small{font-size:1.35rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:start}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.card{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:1rem;padding:1.6rem 1.7rem}
+.card h3{font-size:1.75rem;margin-bottom:.6rem;color:#fff}
+.card p{font-size:1.45rem;line-height:1.4}
+.card .tag{font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:.6rem}
+.big{font-size:2.6rem;line-height:1.3;font-weight:650;color:#fff;max-width:64rem}
+.quote{border-left:.35rem solid var(--accent);padding-left:2rem}
+.chips{display:flex;flex-wrap:wrap;gap:.8rem;margin:1.2rem 0}
+.chip{font-size:1.9rem;font-weight:700;padding:.55rem 1.1rem;border-radius:.7rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
+.chip.hl{background:var(--accent);color:#11131a;border-color:transparent}
+table{border-collapse:collapse;width:100%;font-size:1.55rem}
+th{text-align:left;font-size:1.1rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);padding:.55rem 1.2rem;border-bottom:2px solid var(--accent)}
+td{padding:.5rem 1.2rem;border-bottom:1px solid rgba(255,255,255,.09);color:#d7dbe5;vertical-align:top}
+td:first-child{font-weight:700;color:#fff}
+tr.hl td{background:rgba(255,255,255,.05)}
+table.h td,table.h th{text-align:center}
+.note{font-size:1.25rem;color:#a3aaba;margin-top:1.2rem}
+.kbd{width:100%;height:auto;display:block;margin-top:1.4rem}
+.title-slide h1{font-size:5.6rem;max-width:66rem}
+.title-slide .rule{width:7rem;height:.45rem;background:var(--accent);border-radius:1rem;margin:2rem 0 0}
+.closing .big{font-size:3rem}
+.takeaways li{font-size:1.6rem;margin:.6rem 0}
+.hud{position:fixed;left:0;right:0;bottom:0;height:4.2rem;display:flex;align-items:center;justify-content:space-between;padding:0 7rem 0.6rem;font-size:1.1rem;color:#8d94a5;letter-spacing:.06em;pointer-events:none}
+.progress{position:fixed;left:0;bottom:0;height:.4rem;background:var(--accent);width:0;transition:width .35s ease}
+.track{position:fixed;left:0;right:0;bottom:0;height:.4rem;background:rgba(255,255,255,.08)}
+@media (prefers-reduced-motion:reduce){.slide,.progress{transition:none}}
+</style></head>
+<body><div class="deck" role="region" aria-label="Western Music History: Lineages slides">
+<section class="slide title-slide"><div class="inner"><div class="kicker">Western music history</div>
+<h1>Lineages: Who Learned from Whom</h1>
+<p class="sub">From Bach's sons to Beethoven's students, and the handoffs that carried the line forward.</p><div class="rule"></div></div></section>
+<section class="slide "><div class="inner"><div class='kicker'>Before we start</div><h2>Key takeaways</h2><ul class="takeaways"><li>Beethoven taught <b>Czerny</b> and <b>Ries</b>; Czerny taught <b>Liszt</b>, and Liszt's reach extends to Debussy, Ravel, and Bartók.</li><li>Beethoven came to Vienna at 16 hoping to study with <b>Mozart</b>, but studied his works for life instead.</li><li>Vienna around Beethoven: <b>Haydn, Salieri, Hummel, Schubert, Weber</b>.</li><li>Before Mozart: <b>Haydn</b>, the <b>Mannheim school</b>, and <b>C.P.E. Bach</b> as the bridge from Bach.</li><li>Bach's public revival came with <b>Mendelssohn's 1829 St. Matthew Passion</b> in Berlin.</li><li><b>Frank Bridge → Britten</b> shows the same pattern: the student outshines the teacher.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Beethoven's line</div><h2>Beethoven's direct students</h2>
+<div class="grid2"><div class="card"><div class="tag">Student</div><h3 style="font-size:2.3rem">Carl Czerny</h3><p>Went on to teach <b>Liszt</b>, <b>Chopin</b>, and a generation of virtuosos.</p></div>
+<div class="card"><div class="tag">Student</div><h3 style="font-size:2.3rem">Ferdinand Ries</h3><p>Beethoven's other direct student.</p></div></div></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Beethoven's line</div><h2>Liszt passes it on</h2><ul class=""><li>Liszt taught or influenced <b>Debussy</b>, <b>Scriabin</b>, and <b>Busoni</b>.</li><li>Through masterclasses, he reached <b>Ravel</b> and <b>Bartók</b>.</li><li>Further links (<b>Taneyev–Tchaikovsky–Rubinstein</b>) carry the line into the 20th century.</li><li>Within a few handoffs, the influence reaches <b>Debussy, Ravel, Bartók, and Prokofiev</b>.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">The map</div><h2 style="margin-bottom:1rem">The lineage at a glance</h2><svg viewBox="0 0 1400 590" style="width:100%;max-height:30rem;display:block" role="img" aria-label="lineage diagram">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#ff8a7a"/></marker></defs><path d="M180,281.0 C200.0,281.0 200.0,371.0 220,371.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" marker-end="url(#ar)"/><path d="M380,371.0 C400.0,371.0 400.0,371.0 420,371.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#ar)"/><path d="M380,176.0 C400.0,176.0 400.0,371.0 420,371.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#ar)"/><path d="M380,176.0 C500.0,176.0 500.0,281.0 620,281.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" marker-end="url(#ar)"/><path d="M580,371.0 C600.0,371.0 600.0,281.0 620,281.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#ar)"/><path d="M780,281.0 C800.0,281.0 800.0,176.0 820,176.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" marker-end="url(#ar)"/><path d="M780,281.0 C800.0,281.0 800.0,371.0 820,371.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" marker-end="url(#ar)"/><path d="M980,371.0 C1000.0,371.0 1000.0,371.0 1020,371.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" marker-end="url(#ar)"/><path d="M980,371.0 C1000.0,371.0 1000.0,496.0 1020,496.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" marker-end="url(#ar)"/><path d="M1180,371.0 C1200.0,371.0 1200.0,86.0 1220,86.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#ar)"/><path d="M1180,371.0 C1200.0,371.0 1200.0,201.0 1220,201.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#ar)"/><path d="M1180,371.0 C1200.0,371.0 1200.0,316.0 1220,316.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#ar)"/><path d="M1180,371.0 C1200.0,371.0 1200.0,431.0 1220,431.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#ar)"/><path d="M1180,371.0 C1200.0,371.0 1200.0,546.0 1220,546.0" fill="none" stroke="#ff8a7a" stroke-opacity=".75" stroke-width="3" stroke-dasharray="7 7" marker-end="url(#ar)"/><rect x="20" y="255" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="100.0" y="289" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Bach</text><rect x="220" y="345" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="300.0" y="379" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">C.P.E. Bach</text><rect x="220" y="150" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="300.0" y="184" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Haydn</text><rect x="420" y="345" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="500.0" y="379" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Mozart</text><rect x="620" y="255" width="160" height="52" rx="10" fill="#ff8a7a" stroke="#ff8a7a" stroke-width="2"/><text x="700.0" y="289" text-anchor="middle" font-size="22" font-weight="700" fill="#11131a">Beethoven</text><rect x="820" y="150" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="900.0" y="184" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Ries</text><rect x="820" y="345" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="900.0" y="379" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Czerny</text><rect x="1020" y="345" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="1100.0" y="379" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Liszt</text><rect x="1020" y="470" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="1100.0" y="504" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Chopin</text><rect x="1220" y="60" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="1300.0" y="94" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Debussy</text><rect x="1220" y="175" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="1300.0" y="209" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Scriabin</text><rect x="1220" y="290" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="1300.0" y="324" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Busoni</text><rect x="1220" y="405" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="1300.0" y="439" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Ravel</text><rect x="1220" y="520" width="160" height="52" rx="10" fill="#1a1d26" stroke="#ff8a7a" stroke-width="2"/><text x="1300.0" y="554" text-anchor="middle" font-size="22" font-weight="700" fill="#e9ebf1">Bartók</text></svg>
+<p class="note">Solid: taught directly (or father to son). Dashed: influence, masterclasses, or studying the music. Only links named in these notes are shown.</p></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Beethoven and Mozart</div><h2>The lesson that never happened</h2><ul class=""><li>Beethoven traveled to <b>Vienna at 16</b> hoping to study with Mozart.</li><li>Mozart <b>died</b> before it could happen.</li><li>Mozart reportedly heard the young Beethoven <b>improvise</b> and urged people to watch him.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Beethoven and Mozart</div><h2>A lifelong study</h2>
+<p>Beethoven studied and <b>transcribed</b> Mozart's works throughout his life.</p>
+<div class="grid2" style="margin-top:1.8rem"><div class="card"><div class="tag">Early</div><h3>The early piano concertos</h3><p>Clear Mozart models.</p></div>
+<div class="card"><div class="tag">By the Eroica</div><h3>Fully absorbed</h3><p>The influence has become Beethoven's own language.</p></div></div></div></section>
+<section class="slide "><div class="inner"><div class='kicker'>Vienna</div><h2>Beethoven's Vienna contemporaries</h2><table><tr><th>Composer</th><th>Relationship to Beethoven</th></tr><tr><td>Haydn</td><td>Briefly taught him, before they clashed</td></tr><tr><td>Salieri</td><td>Taught him counterpoint</td></tr><tr><td>Hummel</td><td>Mozart's former student; Beethoven's friend and piano rival</td></tr><tr><td>Schubert</td><td>Younger; worshipped him from a distance</td></tr><tr><td>Weber</td><td>A visiting presence</td></tr></table></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Before Mozart</div><h2>What came before Mozart</h2>
+<div class="grid3"><div class="card"><div class="tag">Haydn</div><h3>Father of the symphony and string quartet</h3><p>Mozart called him teacher.</p></div>
+<div class="card"><div class="tag">Mannheim school</div><h3>Stamitz and others</h3><p>Developed the crescendo and the modern orchestral style.</p></div>
+<div class="card"><div class="tag">The Bach bridge</div><h3>C.P.E. Bach</h3><p>Bach was already dead. His sons were the bridge, especially C.P.E., whose keyboard works Mozart studied as a child.</p></div></div></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Bach</div><h2>Bach in his own time</h2><ul class=""><li>In his lifetime, a <b>working church musician in Leipzig</b>.</li><li>At his death in <b>1750</b>, his music was widely considered <b>old-fashioned</b>.</li><li><b>Mozart</b> and <b>Beethoven</b> studied him privately.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Bach</div><h2>The rediscovery</h2>
+<div class="card" style="max-width:52rem"><div class="tag">Berlin · 1829</div><h3 style="font-size:2.3rem">Mendelssohn performs the St. Matthew Passion</h3><p>This is where the public revival came from.</p></div>
+<p style="margin-top:2rem">The <b>“father of modern music”</b> title is largely a <b>19th-century invention</b>, even though the foundation underneath it is real.</p></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Mendelssohn</div><h2>Mendelssohn</h2>
+<p class="big" style="font-size:4.4rem" ><span class="ac">1809–1847</span></p><ul class=""><li>Early Romantic generation, alongside <b>Schubert</b> and <b>Chopin</b>.</li><li>Died at <b>38</b>.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">A parallel pattern</div><h2>Frank Bridge and Benjamin Britten</h2><ul class=""><li>Bridge taught Britten <b>privately</b>, from ages <b>10 to 14</b>.</li><li>You can clearly hear Bridge in early Britten: <b>harmonic restlessness</b>, <b>sea imagery</b>, and <b>English melancholy</b>.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">A parallel pattern</div><h2>When the student outshines the teacher</h2>
+<p class="big quote">Bridge is now largely a footnote, except to those who seek him out.</p>
+<p style="margin-top:2rem">It echoes how <b>Schoenberg's students</b> became more beloved than the teacher.</p></div></section>
+<section class="slide closing"><div class="inner"><div class="kicker">In one sentence</div>
+<div class="chips" style="align-items:center;gap:.5rem;margin-bottom:2rem"><span class='chip' style='font-size:1.45rem;padding:.45rem .8rem'>Bach</span> <span class='ac' style='font-size:1.6rem'>→</span> <span class='chip' style='font-size:1.45rem;padding:.45rem .8rem'>sons</span> <span class='ac' style='font-size:1.6rem'>→</span> <span class='chip' style='font-size:1.45rem;padding:.45rem .8rem'>Mozart</span> <span class='ac' style='font-size:1.6rem'>→</span> <span class='chip' style='font-size:1.45rem;padding:.45rem .8rem'>Beethoven</span> <span class='ac' style='font-size:1.6rem'>→</span> <span class='chip' style='font-size:1.45rem;padding:.45rem .8rem'>Czerny</span> <span class='ac' style='font-size:1.6rem'>→</span> <span class='chip' style='font-size:1.45rem;padding:.45rem .8rem'>Liszt</span> <span class='ac' style='font-size:1.6rem'>→</span> <span class='chip' style='font-size:1.45rem;padding:.45rem .8rem'>Debussy / Ravel / Bartók</span></div>
+<p class="big" style="font-size:2.5rem">Western art music is a <span class="ac">chain of apprenticeships</span>, with blues as an independent root that jazz grew from, and atonality as a deliberate break from the whole inheritance.</p></div></section>
+</div>
+<div class="hud"><span>WESTERN MUSIC HISTORY</span><span class="counter"></span></div>
+<div class="track"></div><div class="progress"></div>
+<script>
+(function(){
+ var s=[].slice.call(document.querySelectorAll('.slide')),i=0,
+ bar=document.querySelector('.progress'),ctr=document.querySelector('.counter');
+ function go(n){i=Math.max(0,Math.min(s.length-1,n));
+  s.forEach(function(e,k){e.classList.toggle('active',k===i);e.setAttribute('aria-hidden',k!==i)});
+  bar.style.width=((i+1)/s.length*100)+'%';ctr.textContent=(i+1)+' / '+s.length;
+  if(location.hash!=='#'+(i+1))history.replaceState(null,'','#'+(i+1));}
+ window.goTo=function(n){go(n-1)};window.slideCount=s.length;
+ document.addEventListener('keydown',function(e){
+  var k=e.key;
+  if(k==='ArrowRight'||k===' '||k==='PageDown'||k==='Enter'){e.preventDefault();go(i+1)}
+  else if(k==='ArrowLeft'||k==='PageUp'||k==='Backspace'){e.preventDefault();go(i-1)}
+  else if(k==='Home'){e.preventDefault();go(0)}
+  else if(k==='End'){e.preventDefault();go(s.length-1)}});
+ document.addEventListener('click',function(e){ if(e.clientX<window.innerWidth*0.2)go(i-1);else go(i+1)});
+ window.addEventListener('hashchange',function(){var n=parseInt(location.hash.slice(1),10);if(n)go(n-1)});
+ var n=parseInt(location.hash.slice(1),10);go(n?n-1:0);
+})();
+</script></body></html>

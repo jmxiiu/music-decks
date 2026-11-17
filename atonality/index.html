@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Atonality and Beyond</title>
+<style>:root{--accent:#5fd3c6;--glow:rgba(95,211,198,.12)}
+*{box-sizing:border-box;margin:0;padding:0}
+html{font-size:min(1.25vw,2vh)}
+html,body{height:100%;overflow:hidden;background:#0d0f14}
+body{color:#e9ebf1;font-family:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans","DejaVu Sans","Segoe UI Symbol","Apple Symbols",sans-serif;-webkit-font-smoothing:antialiased;cursor:pointer;user-select:none}
+.deck{position:fixed;inset:0;background:radial-gradient(ellipse at 85% 0%,var(--glow) 0%,transparent 55%),#0d0f14}
+.slide{position:absolute;inset:0;display:flex;flex-direction:column;justify-content:center;padding:4.2rem 7rem 5.6rem;opacity:0;visibility:hidden;transition:opacity .35s ease,transform .35s ease;transform:translateY(.6rem)}
+.slide.active{opacity:1;visibility:visible;transform:none}
+.inner{width:100%;max-width:74rem;margin:0 auto}
+.kicker{font-size:1.15rem;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:1.1rem}
+h1{font-size:4.9rem;line-height:1.05;font-weight:800;letter-spacing:-.02em}
+h2{font-size:3.3rem;line-height:1.1;font-weight:750;letter-spacing:-.015em;margin-bottom:1.8rem}
+.sub{font-size:1.9rem;color:#b4bac8;margin-top:1.6rem;line-height:1.4;max-width:60rem}
+p,li{font-size:1.75rem;line-height:1.45;color:#d7dbe5}
+p+p{margin-top:1rem}
+ul{list-style:none}
+li{position:relative;padding-left:1.8rem;margin:.75rem 0}
+li::before{content:"";position:absolute;left:0;top:.62em;width:.6rem;height:.6rem;border-radius:50%;background:var(--accent)}
+b,strong{color:#fff;font-weight:700}
+.ac{color:var(--accent)}
+.muted{color:#a3aaba}
+.small{font-size:1.35rem}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:2.4rem;align-items:start}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:1.8rem}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:1.4rem}
+.card{background:rgba(255,255,255,.045);border:1px solid rgba(255,255,255,.09);border-radius:1rem;padding:1.6rem 1.7rem}
+.card h3{font-size:1.75rem;margin-bottom:.6rem;color:#fff}
+.card p{font-size:1.45rem;line-height:1.4}
+.card .tag{font-size:1.05rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:.6rem}
+.big{font-size:2.6rem;line-height:1.3;font-weight:650;color:#fff;max-width:64rem}
+.quote{border-left:.35rem solid var(--accent);padding-left:2rem}
+.chips{display:flex;flex-wrap:wrap;gap:.8rem;margin:1.2rem 0}
+.chip{font-size:1.9rem;font-weight:700;padding:.55rem 1.1rem;border-radius:.7rem;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}
+.chip.hl{background:var(--accent);color:#11131a;border-color:transparent}
+table{border-collapse:collapse;width:100%;font-size:1.55rem}
+th{text-align:left;font-size:1.1rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);padding:.55rem 1.2rem;border-bottom:2px solid var(--accent)}
+td{padding:.5rem 1.2rem;border-bottom:1px solid rgba(255,255,255,.09);color:#d7dbe5;vertical-align:top}
+td:first-child{font-weight:700;color:#fff}
+tr.hl td{background:rgba(255,255,255,.05)}
+table.h td,table.h th{text-align:center}
+.note{font-size:1.25rem;color:#a3aaba;margin-top:1.2rem}
+.kbd{width:100%;height:auto;display:block;margin-top:1.4rem}
+.title-slide h1{font-size:5.6rem;max-width:66rem}
+.title-slide .rule{width:7rem;height:.45rem;background:var(--accent);border-radius:1rem;margin:2rem 0 0}
+.closing .big{font-size:3rem}
+.takeaways li{font-size:1.6rem;margin:.6rem 0}
+.hud{position:fixed;left:0;right:0;bottom:0;height:4.2rem;display:flex;align-items:center;justify-content:space-between;padding:0 7rem 0.6rem;font-size:1.1rem;color:#8d94a5;letter-spacing:.06em;pointer-events:none}
+.progress{position:fixed;left:0;bottom:0;height:.4rem;background:var(--accent);width:0;transition:width .35s ease}
+.track{position:fixed;left:0;right:0;bottom:0;height:.4rem;background:rgba(255,255,255,.08)}
+@media (prefers-reduced-motion:reduce){.slide,.progress{transition:none}}
+</style></head>
+<body><div class="deck" role="region" aria-label="Atonality and Beyond slides">
+<section class="slide title-slide"><div class="inner"><div class="kicker">Beyond the tonic</div>
+<h1>Atonality and Beyond</h1>
+<p class="sub">Schoenberg, twelve-tone rows, chance music, and sound as texture.</p><div class="rule"></div></div></section>
+<section class="slide "><div class="inner"><div class='kicker'>Before we start</div><h2>Key takeaways</h2><ul class="takeaways"><li><b>Atonality</b> means no tonal center. Schoenberg made it systematic in the early 1900s.</li><li><b>Twelve-tone technique</b> uses all 12 notes in a fixed row, so no note gets to be “home.”</li><li>Schoenberg is <b>respected more than loved</b>; his students Berg and Webern are performed more.</li><li><b>Chance music</b> (Cage) lets coin flips or dice decide the content: let sound be sound.</li><li><b>Texture</b> music (Ligeti) swaps melody for shifting density, speed, brightness, and mass.</li><li>Once the ear stops expecting resolution, <b>dissonance reads as color</b>, not error.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Atonality</div><h2>What if there's no home note?</h2><ul class=""><li><b>Atonality</b> is music with <b>no tonal center</b>.</li><li><b>Schoenberg</b> developed a systematic approach in the <b>early 1900s</b>.</li><li>Why: he felt the major-minor system had been <b>exhausted</b> by Wagner and the late Romantics.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Atonality</div><h2>He mastered the rules first</h2>
+<div class="grid2" style="margin-top:.6rem"><div class="card"><div class="tag">Early works</div><h3>Pure late-Romantic</h3><p>Schoenberg was already a master of traditional harmony.</p></div>
+<div class="card"><div class="tag">Then</div><h3>A deliberate break</h3><p>Only then did he deliberately break the rules.</p></div></div></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Twelve-tone technique</div><h2>All twelve notes, in a fixed row</h2>
+<div class="chips" style="flex-wrap:nowrap;gap:.6rem;margin:.4rem 0 1.8rem"><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>1</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>2</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>3</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>4</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>5</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>6</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>7</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>8</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>9</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>10</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>11</span><span class='chip' style='flex:1;text-align:center;font-size:1.6rem;padding:.8rem 0'>12</span></div><ul class=""><li>All <b>12 chromatic notes</b> are arranged in a fixed order: the <b>row</b>.</li><li><b>No note repeats</b> until the entire set has been used.</li><li>Result: no note gets to be the privileged <b>“home”</b> note.</li></ul><p class='note'>Positions 1–12 of a row; each holds a different chromatic note.</p></div></section>
+<section class="slide "><div class="inner"><div class='kicker'>Twelve-tone technique</div><h2>Four ways to use one row</h2><table><tr><th>Form of the row</th><th>How it's used</th></tr><tr><td>Original</td><td>The row in its fixed order</td></tr><tr><td>Backwards</td><td>The row played in reverse</td></tr><tr><td>Inverted</td><td>The row inverted</td></tr><tr><td>Retrograde-inverted</td><td>The inverted row, played backwards</td></tr></table><p class='note'>Whichever form is used, the rule holds: no note repeats until all 12 have sounded.</p></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Reputation</div><h2>Respected more than loved</h2>
+<div class="grid2"><div class="card"><div class="tag">Fills halls</div><h3>Verklärte Nacht</h3><p>Works like this draw general audiences.</p></div>
+<div class="card"><div class="tag">Specialist festivals</div><h3>Twelve-tone pieces</h3><p>These show up mostly where specialists gather.</p></div></div><ul class=""><li>His students <b>Berg</b> and <b>Webern</b> ended up performed more often than the teacher.</li><li>His <b>influence is massive</b>; his popular audience is smaller.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Aleatoric music</div><h2>Let chance decide</h2><ul class=""><li><b>John Cage</b> and others used <b>coin flips, dice</b>, or other chance procedures to pick pitches and rhythms.</li><li>The <b>structure</b> (time signature, duration) can stay fixed.</li><li>The <b>content</b> inside it is left undetermined.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Cage's stance</div>
+<p class="big quote" style="font-size:3.6rem">Let sound be sound.</p>
+<p style="margin-top:2rem">Rather than expressing the composer's will.</p></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Motifs and pattern</div><h2>Atonal doesn't mean patternless</h2><ul class=""><li>Schoenberg's <b>rows themselves work as motifs</b>.</li><li>They can be <b>developed</b> and <b>returned to</b>, like any theme.</li><li>What atonality removes is the idea that any note is <b>“home.”</b></li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Motifs and pattern</div><h2>A center can creep back in</h2>
+<p class="big quote">Once a motif repeats enough for the ear to treat it as a reference point, some sense of center can reappear.</p></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Textural music</div><h2>No melody line to follow</h2><ul class=""><li>Example: <b>Ligeti's <i>Atmosphères</i></b>, or his <b>micropolyphony</b>.</li><li>There's no single melody line to track.</li><li>Listening becomes about <b>texture</b> rather than following a story.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">Textural music</div><h2>What shifts instead</h2><div class="grid4"><div class='card' style='text-align:center;padding:2.2rem 1rem'><h3 style='font-size:2.3rem;margin:0'>Density</h3></div><div class='card' style='text-align:center;padding:2.2rem 1rem'><h3 style='font-size:2.3rem;margin:0'>Speed</h3></div><div class='card' style='text-align:center;padding:2.2rem 1rem'><h3 style='font-size:2.3rem;margin:0'>Brightness</h3></div><div class='card' style='text-align:center;padding:2.2rem 1rem'><h3 style='font-size:2.3rem;margin:0'>Mass</h3></div></div>
+<p style="margin-top:2rem">These qualities change <b>like weather</b>, and that change is the music.</p></div></section>
+<section class="slide "><div class="inner"><div class="kicker">A personal listening note</div><h2>Dissonance as color</h2><ul class=""><li>Some people come to <b>enjoy</b> atonal or textural music.</li><li>It tends to click once the ear <b>stops expecting resolution</b>.</li><li>Then dissonance reads as <b>color</b> rather than <b>error</b>.</li></ul></div></section>
+<section class="slide "><div class="inner"><div class="kicker">A personal listening note</div><h2>How random is “random”?</h2><ul class=""><li>Random piano improvisation that produces <b>recurring motifs</b> is still filtered through <b>absorbed patterns</b>.</li><li>Once someone knows the rules, <b>pure randomness is rare</b>.</li></ul></div></section>
+<section class="slide closing"><div class="inner"><div class="kicker">In short</div>
+<p class="big">Atonality is a <span class="ac">deliberate refusal of tonic pull</span>, while chance and texture open still other ways of organizing sound.</p></div></section>
+</div>
+<div class="hud"><span>ATONALITY AND BEYOND</span><span class="counter"></span></div>
+<div class="track"></div><div class="progress"></div>
+<script>
+(function(){
+ var s=[].slice.call(document.querySelectorAll('.slide')),i=0,
+ bar=document.querySelector('.progress'),ctr=document.querySelector('.counter');
+ function go(n){i=Math.max(0,Math.min(s.length-1,n));
+  s.forEach(function(e,k){e.classList.toggle('active',k===i);e.setAttribute('aria-hidden',k!==i)});
+  bar.style.width=((i+1)/s.length*100)+'%';ctr.textContent=(i+1)+' / '+s.length;
+  if(location.hash!=='#'+(i+1))history.replaceState(null,'','#'+(i+1));}
+ window.goTo=function(n){go(n-1)};window.slideCount=s.length;
+ document.addEventListener('keydown',function(e){
+  var k=e.key;
+  if(k==='ArrowRight'||k===' '||k==='PageDown'||k==='Enter'){e.preventDefault();go(i+1)}
+  else if(k==='ArrowLeft'||k==='PageUp'||k==='Backspace'){e.preventDefault();go(i-1)}
+  else if(k==='Home'){e.preventDefault();go(0)}
+  else if(k==='End'){e.preventDefault();go(s.length-1)}});
+ document.addEventListener('click',function(e){ if(e.clientX<window.innerWidth*0.2)go(i-1);else go(i+1)});
+ window.addEventListener('hashchange',function(){var n=parseInt(location.hash.slice(1),10);if(n)go(n-1)});
+ var n=parseInt(location.hash.slice(1),10);go(n?n-1:0);
+})();
+</script></body></html>
